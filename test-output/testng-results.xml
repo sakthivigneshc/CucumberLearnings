@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-08T17:09:21 IST" name="Default suite" finished-at="2026-02-08T17:09:22 IST" duration-ms="565">
+  <suite started-at="2026-02-09T20:49:10 IST" name="Default suite" finished-at="2026-02-09T20:49:43 IST" duration-ms="33216">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunnerFile@65987993]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-02-08T17:09:21 IST" name="Default test" finished-at="2026-02-08T17:09:22 IST" duration-ms="565">
+    <test started-at="2026-02-09T20:49:10 IST" name="Default test" finished-at="2026-02-09T20:49:43 IST" duration-ms="33216">
       <class name="testRunner.RunnerFile">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.RunnerFile@65987993]" started-at="2026-02-08T17:09:21 IST" name="setUpClass" finished-at="2026-02-08T17:09:22 IST" duration-ms="309" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.RunnerFile@65987993]" started-at="2026-02-09T20:49:10 IST" name="setUpClass" finished-at="2026-02-09T20:49:11 IST" duration-ms="297" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4eed46ee]]>
+                <![CDATA[org.testng.TestRunner@58b67519]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunnerFile@65987993]" started-at="2026-02-08T17:09:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-08T17:09:22 IST" duration-ms="111" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunnerFile@65987993]" started-at="2026-02-09T20:49:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-09T20:49:23 IST" duration-ms="12040" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,11 +37,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunnerFile@65987993]" started-at="2026-02-08T17:09:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-08T17:09:22 IST" duration-ms="66" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunnerFile@65987993]" started-at="2026-02-09T20:49:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-09T20:49:33 IST" duration-ms="10141" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["InValid login"]]>
+                <![CDATA["InValidUsername login"]]>
               </value>
             </param>
             <param index="1">
@@ -50,66 +50,26 @@
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'InValidUser open the browser' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("InValidUser open the browser")
-public void inValidUserOpenTheBrowser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("InValid user navigates to login page")
-public void inValidUserNavigatesToLoginPage() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("InValid user enters as standard_user and secret_sauce")
-public void inValidUserEntersAsStandardUserAndSecretSauce() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("InValid we need to see home page")
-public void inValidWeNeedToSeeHomePage() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'InValidUser open the browser' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("InValidUser open the browser")
-public void inValidUserOpenTheBrowser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("InValid user navigates to login page")
-public void inValidUserNavigatesToLoginPage() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("InValid user enters as standard_user and secret_sauce")
-public void inValidUserEntersAsStandardUserAndSecretSauce() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("InValid we need to see home page")
-public void inValidWeNeedToSeeHomePage() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at ✽.InValidUser open the browser(file:///C:/Users/2252407/eclipse-workspace/CucumberLearnings/src/test/java/cucumberExample/login.feature:10)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.RunnerFile@65987993]" started-at="2026-02-08T17:09:22 IST" name="tearDownClass" finished-at="2026-02-08T17:09:22 IST" duration-ms="5" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunnerFile@65987993]" started-at="2026-02-09T20:49:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-09T20:49:43 IST" duration-ms="10661" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["InValidPassword login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.RunnerFile@65987993]" started-at="2026-02-09T20:49:43 IST" name="tearDownClass" finished-at="2026-02-09T20:49:43 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
