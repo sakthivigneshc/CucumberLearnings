@@ -8,8 +8,12 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 		features = {"src/test/java/cucumberExample/login.feature"},
 		dryRun = false,
 		glue ="stepDefinitions",
-		snippets = SnippetType.CAMELCASE
-//		monochrome = true
+		snippets = SnippetType.CAMELCASE,
+		monochrome = true,
+		plugin = {"pretty","html:cucumberreports.html",
+				"json:result.json"
+		
+		}
 		)
 public class RunnerFile extends AbstractTestNGCucumberTests {
 }
@@ -28,4 +32,16 @@ Total tests run: 6, Passes: 6, Failures: 0, Skips: 0
 ===============================================
 
 
-*/    
+âœ  to resolve this in console
+
+Eclipse Preferences → Workspace
+    
+Change from:
+❌ Default (windows‑1252)
+To:
+✅ Other: UTF‑8
+
+*/  
+
+
+
