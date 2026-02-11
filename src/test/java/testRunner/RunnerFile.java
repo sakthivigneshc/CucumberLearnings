@@ -5,8 +5,8 @@ import io.cucumber.testng.CucumberOptions.SnippetType;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
-		features = {"src/test/java/cucumberExample/login.feature"},
-		dryRun = false,
+		features = {"src/test/java/cucumberExample"},
+		dryRun =  false,
 		glue ="stepDefinitions",
 		snippets = SnippetType.CAMELCASE,
 		monochrome = true,
