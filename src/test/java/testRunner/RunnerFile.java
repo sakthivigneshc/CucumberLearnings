@@ -12,11 +12,14 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 		monochrome = true,
 		plugin = {"pretty","html:cucumberreports.html",
 				"json:result.json"
-		
-		}
+		},
+		tags = "not @test2 and @smoke"
 		)
 public class RunnerFile extends AbstractTestNGCucumberTests {
 }
+
+
+//because of added smoke added only 3 run will happen  
 
 
 /*
