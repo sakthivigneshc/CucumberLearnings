@@ -12,7 +12,7 @@ import io.cucumber.java.en.When;
 
 public class Login_Steps {
 
-    static WebDriver driver;
+     static WebDriver driver;
 
     @Given("User open the browser")
     public void userOpenTheBrowser1() {
